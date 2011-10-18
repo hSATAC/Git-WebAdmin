@@ -3,10 +3,22 @@ require 'Slim/Slim.php';
 $app = new Slim();
 
 $app->get('/', function() use($app) {
-  // 取得所有 repo
-  $repo_list = array_filter(glob('../*.git'), 'is_dir');
+  $repo_list = get_repo_list();
   $vars = compact('repo_list');
   $app->render('index.tpl.php', $vars);
 });
+$app->post('/create', function() use($app) {
 
+  echo $app->request()->post('repo_name');
+});
 $app->run();
+
+
+// 取得所有 repo
+function get_repo_list()
+{
+  $func = function($value) {
+    return substr($value, 3);
+  };
+  return array_map($func, array_filter(glob('../*.git'), 'is_dir'));
+}
