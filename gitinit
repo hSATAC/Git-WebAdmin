@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ "$1" = "" ]; then
+  echo "repository name is empty!"
+  exit 1
+else
+  mkdir ../$1
+  cd ../$1
+  /usr/local/git/bin/git init --bare
+  mv hooks/post-update.sample hooks/post-update
+  /usr/local/git/bin/git update-server-info
+fi
+exit 0

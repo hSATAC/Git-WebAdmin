@@ -9,7 +9,8 @@ $app->get('/', function() use($app) {
 });
 $app->post('/create', function() use($app) {
 
-  echo $app->request()->post('repo_name');
+  $repo_name = $app->request()->post('repo_name');
+  echo `./gitinit {$repo_name}`;
 });
 $app->run();
 
