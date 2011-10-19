@@ -28,7 +28,7 @@
             <nav>
                 <ul>
                     <li><a href="/admin">Index</a></li>
-                    <li><a href="#">Github</a></li>
+                    <li><a target="_blank" href="https://github.com/hSATAC/Git-WebAdmin">Github</a></li>
                 </ul>
             </nav>
         </header>
