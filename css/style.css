@@ -221,9 +221,9 @@ body{
 }
 
 #header-container{
-	background-color:#f16529;
+	background-color:#425470;
 	height:130px;
-	border-bottom:20px solid #e44d26;
+	border-bottom:20px solid #3F6569;
 	margin-bottom:50px;
 	-webkit-box-shadow:0 40px 40px -40px #AAA;
 	   -moz-box-shadow:0 40px 40px -40px #AAA;
@@ -239,6 +239,7 @@ h3{font-size: 30px;}
 	font-size: 60px;
 	color:white;
 	float:left;
+	margin-top:40px;
 }
 
 header nav{
@@ -254,7 +255,7 @@ nav a{
 	padding:20px;
 	color:white;
 	text-decoration:none;
-	background-color:#e44d26;
+	background-color:#3F6569;
 }
 nav a:visited{
     color:white;
@@ -288,9 +289,9 @@ article header{
 }
 
 #footer-container{
-	background-color:#f16529;
+	background-color:#425470;
 	height:240px;
-	border-top:20px solid #e44d26;
+	border-top:20px solid #3F6569;
 	margin-top:50px;
 	-webkit-box-shadow:0 -40px 40px -40px #AAA;
 	   -moz-box-shadow:0 -40px 40px -40px #AAA;
@@ -302,7 +303,7 @@ article header{
 }
 ul.repo-list {
     list-style-type:none;
-    padding-left:0px;
+    padding-left: 0px;
     margin-left: 10px;
 }
 ul.repo-list li{
@@ -310,16 +311,23 @@ ul.repo-list li{
 }
 ul.repo-list li a{
     font-size: 22px;
-    display:block; width: 100%;
+    display: block;
+    width: 100%;
 }
 ul.repo-list li a:visited{ 
-    color:blue; 
+    color: blue; 
 }
 ul.repo-list li a:hover{ 
-    background:#F16529; 
-    color:white;
+    background: #425470; 
+    color: white;
 }
-
+a.repo-name{
+  line-height: 1.2;
+  font-size: 22px;
+}
+a.repo-name:visited{
+  color:blue;
+}
 /* =============================================================================
    Non-semantic helper classes
    Please define your styles before this section.
